@@ -1,0 +1,66 @@
+<html>
+   <head>
+       
+       <title>What Movie to Watch?</title>
+     <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+       
+        <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+        href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
+ 
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $("#name").autocomplete({
+                        source:'getautocomplete.php',
+                        minLength:1
+                    });
+                });
+        </script>
+   </head>
+ 
+   <body style="width: 900px;margin: 0 auto;">
+    
+       <div class="page-header">
+  <h1>What Movie to Watch?<small></small></h1>
+</div>
+       <div class="row">
+       
+           
+      <div class="well well-large">
+ <form method="post">
+  <div class="input-append">
+    <input type="text" id="name" name="name" size="115" placeholder="type name of a movie you watched before..." class="input-block-level">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+    </form>
+</div>
+       
+           
+  </div>
+       
+       <?php ?>
+       <div class="container">
+    <div class="row">
+           <ul class="thumbnails">
+  <li class="span3">
+    <div class="thumbnail">
+      <img class="img-polaroid" height="100" width="100" src="http://ia.media-imdb.com/images/M/MV5BMTk2ODA2MDU3Ml5BMl5BanBnXkFtZTcwODY1NDcxMQ@@._V1_SY317_CR1,0,214,317_.jpg" alt="">
+      <h3>How High</h3>
+      <p align="center"><a href="http://www.youtube.com/watch?v=iIDLVpuDB9s"><botton class="btn  btn-warning">Trailer</botton></a>&nbsp;&nbsp;<a href="https://www.google.com/#q=watch how high free online"><botton class="btn  btn-info">Watch Online</botton></a><a href="http://www.imdb.com/find?q=how high"><botton class="btn  btn-link">IMDb</botton></a></p>
+    </div>
+  </li>
+  
+</ul>
+           
+           </div>
+  </div>
+       
+        <script src="assets/js/holder.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+       
+   </body>
+<html>
